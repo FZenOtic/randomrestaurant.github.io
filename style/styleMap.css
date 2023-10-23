@@ -1,0 +1,21 @@
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+ #map ,#map2 ,#map3 ,#map4 ,#map5 ,#map6 ,#map7 ,#map8 ,#map9 ,#map10{
+    position: relative;
+    width: 95%;
+    height: 50%;
+    border-radius: 10px;
+  }
+
+  #map11 ,#map12 ,#map13 ,#map14 ,#map15 ,#map16 ,#map17 ,#map18 ,#map19 ,#map20{
+    position: relative;
+    width: 95%;
+    height: 50%;
+    border-radius: 10px;
+  }
+  /* 
+   * Optional: Makes the sample page fill the window. 
+   */
+ 

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>project</title>
+        <link  href="style/stylesearchbar.css" rel="stylesheet">
+        <link  href="style/HomePage.css" rel="stylesheet">
+        <link  href="style/stylenavbar.css" rel="stylesheet">
+        <link rel="stylesheet" href="style/stylespin.css">
+        <link rel="stylesheet" type="text/css" href="style/styleMap.css" />
+        <script src="script/scriptHomePage.js"></script>
+        <script  src="script/Winwheel.js"></script>
+        <script src="script/alacarte.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script src="https://kit.fontawesome.com/5fcc11d7db.js"crossorigin="anonymous"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script type="module" src="script/scriptMap.js"></script>
+    </head>
+    <body>    
+        
+        <div class="navigation">
+            <button class="hamburger" onclick="show()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </button>
+    
+            <nav id="nav">
+                <ul>
+                    <li><a href="HomePage.html" >Home</a></li>
+                    <li id="typeOfFood"><a>Type of Food</a>
+                        <ul class="dropdown-content">
+                            <li><a href="aLaCarteFoodPage.html" >A La Carte Food</a></li>
+                            <li><a href="NoodleMenuPage.html" >Noodles</a></li>
+                        </ul>
+                </ul>
+            </nav>
+        </div>
+        <script src="script/scriptnavbar.js"></script>
+
+
+        <div class ="search-box">
+            <div class = "row">
+                <input type ="text" id="input-box" placeholder="Search anything"
+                autocomplete="off">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="arrow-container">
+                <img src="picture/arrow.png" alt="picture">
+            </div>
+            <div class="wheel-container">
+                <td width="800" height="800" class="the_wheel">
+                    <button onClick="startSpin();" type="button" class="canvas-button">
+                        <canvas id="canvas" width="800" height="800"></canvas>
+                    </button>
+                </td>
+            </div>
+        </div>
+
+        <div class="names-container">
+            <button type="button" class="collapsible-button">+</button>
+            <div class="content">
+                <form class="js-form">
+                    <input autofocus type="text" aria-label="Enter a name to add" placeholder="Enter a name to add" class="js-name-input">
+                </form>
+                <ul class="todo-list js-name-list"></ul>
+                <div class="empty-state">
+                </div>
+            </div>
+        </div>
+        <script src="script/WheelScript.js"></script>
+        
+    </body>
+</html>

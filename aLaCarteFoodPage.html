@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A La Carte Food Page</title>
+        <link  href="style/styleALaCarteFood.css" rel="stylesheet">
+        <link  href="style/stylenavbar.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style/styleMap.css" />
+        <script src="https://kit.fontawesome.com/5fcc11d7db.js" crossorigin="anonymous"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script type="module" src="script/scriptMap.js"></script>
+
+    </head>
+    <body>  
+
+        <div class="navigation">
+            <button class="hamburger" onclick="show()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </button>
+    
+            <nav id="nav">
+                <ul>
+                    <li><a href="HomePage.html" >Home</a></li>
+                    <li id="typeOfFood"><a>Type of Food</a>
+                        <ul class="dropdown-content">
+                            <li><a href="aLaCarteFoodPage.html" >A La Carte Food</a></li>
+                            <li><a href="NoodleMenuPage.html" >Noodles</a></li>
+                        </ul>
+                    
+                </ul>
+            </nav>
+        </div>
+        <script src="script/scriptnavbar.js"></script>
+        
+        
+
+        <h1>A La Carte Food</h1>
+        <div class="blog-indecrease">
+            <p>You Can Random Restaurant!!</p>
+            <div>
+                <button id="decreaseBtn"><i class="fa-solid fa-minus"></i></button>
+                <span id="counter">0</span>
+                <button id="increaseBtn"><i class="fa-solid fa-plus"></i></button>
+                <button id="addBtn">Add</button>
+                <script src="script/scriptALaCarteFood.js"></script>
+            </div>
+        </div>
+        
+
+
+        <section class="blog">
+
+            <div class="container">
+
+                <div class="blog-title"></div>
+
+                <div class="blog-con">
+                    
+                    <div class="blog-item">
+                        <img src="https://scontent.fkkc2-1.fna.fbcdn.net/v/t39.30808-6/240592567_110569278026184_6894278947183837809_n.png?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=XrXcttq8ZJQAX8uv8IF&_nc_ht=scontent.fkkc2-1.fna&oh=00_AfDWdlMwypcR1XGTmcYeNgejtNgwHVlPWKguY3JuETzPAw&oe=653AEA6A"alt="picture">
+                        
+                        <span class="blog-openBtn" onclick="togglePopup('popup-1')">บ้านอร่อย ขอนแก่น</span>
+                        <p>⏰Hours: 11 AM–2 PM, 4–8 PM </br>
+                            Fir : Closed
+                        </p>
+
+                        <div class="popup" id="popup-1">
+                            <div class="blog-popup"></div>
+                            <div class="blog-popup-content">
+                                <span class="blog-closeBtn"  id="closeBtn-1" onclick="togglePopup('popup-1')">&times;</span>
+                                <div class="maps" id="map"></div>
+                                <div>
+                                    <h3>บ้านอร่อย ขอนแก่น</h3>
+                                    <p>📍Address: ปณ, 123/1195 โครงการยูเซ็นเตอร์ ม.ข. บ้านอร่อย ในเมือง Mueang Khon Kaen District, Khon Kaen 40002</br>
+                                        ⏰Hours: Opens 11 AM–2 PM, 4–8 PM<br>
+                                        ☎️Phone: 092 461 0388
+                                    </p>
+                                </div>
+                                <button class="addMenuBtnInpopup" onclick="addMenuToWheel('บ้านอร่อย ขอนแก่น')">Add Menu</button>
+                            </div>
+                            
+                        </div>
+                        <button class="addMenuBtn" onclick="addMenuToWheel('บ้านอร่อย ขอนแก่น')">Add Menu</button>
+                    </div>
+
+
+
+                    <div class="blog-item">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipNsixN77rZRoB_Qcd9IHSE9GEYvmZuZ3ou8T0Hi=s1360-w1360-h1020" alt="picture">
+
+                        <span class="blog-openBtn" onclick="togglePopup('popup-2')">ลาบก้อย ซ.นานา</span>
+                        <p>⏰Hours: 4 PM - 2 AM</p>
+                 
+
+                        <div class="popup" id="popup-2">
+                            <div class="blog-popup"></div>
+                            <div class="blog-popup-content">
+                                <span class="blog-closeBtn"  id="closeBtn-2" onclick="togglePopup('popup-2')">&times;</span>
+                                <div class="maps" id="map2"></div>
+                                <div>
+                                    <h3>ลาบก้อย ซ.นานา</h3>
+                                    <p>จัดจ้าน ถึงใจ ด้วยเมนูอาหารอีสานรสแซ่บ และแจ่วฮ้อนรสเด็ด ที่ร้าน ‘ลาบก้อย ซ.นานา’<br>
+                                        📍Address: 123/1167 โครงการ ยูเซ็นเตอร์ มหาวิทยาลัยขอนแก่น 123/1168 โครงการ ยูเซ็นเตอร์ มหาวิทยาลัยขอนแก่น Mueang Khon Kaen District, Khon Kaen 40002 <br>
+                                        ⏰Hours: 4 PM - 2 AM <br>
+                                        ☎️Phone: 087 722 7673
+                                    </p>
+                                </div>    
+                                <button class="addMenuBtnInpopup" onclick="addMenuToWheel('ลาบก้อย ซ.นานา')">Add Menu</button>
+                            </div>
+                            
+                        </div>
+                        <button class="addMenuBtn" onclick="addMenuToWheel('ลาบก้อย ซ.นานา')">Add Menu</button>
+                    </div>
+
+
+
+                    <div class="blog-item">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipPKw9VsRto_BVjfoBZPpbMPsEF3tLRhwBY0x3hf=s1360-w1360-h1020" alt="picture">
+
+                        <span class="blog-openBtn" onclick="togglePopup('popup-3')">ร้านลุงราญอาหารตามสั่ง</span>
+                        <p>⏰Hours: Opens 7 AM - 8 PM
+                            </p>
+                 
+
+                        <div class="popup" id="popup-3">
+                            <div class="blog-popup"></div>
+                            <div class="blog-popup-content">
+                                <span class="blog-closeBtn"  id="closeBtn-3" onclick="togglePopup('popup-3')">&times;</span>
+                                <div class="maps" id="map3"></div>
+                                <div>
+                                    <h3>ร้านลุงราญอาหารตามสั่ง</h3>
+                                    <p> >ร้านอาหารตามสั่ง ถูก อร่อย ประหยัด<br>
+                                        📍Address: FR7G+3R5, Soi Adunyaram 1/5, Tambon Nai Mueang, Mueang Khon Kaen District, Khon Kaen 40000<br>
+                                        ⏰Hours : Opens 7 AM - 8 PM <br>
+                                    </p>
+                                </div>
+                                <button class="addMenuBtnInpopup" onclick="addMenuToWheel('ร้านลุงราญอาหารตามสั่ง')">Add Menu</button>
+                            </div>
+                            
+                        </div>
+                        <button class="addMenuBtn" onclick="addMenuToWheel('ร้านลุงราญอาหารตามสั่ง')">Add Menu</button>
+                    </div>
+
+
+
+                    <div class="blog-item">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipNcp16qbwGt8Yxol1QNmioXf5Ea1m8zybkAxXi2=s1360-w1360-h1020" alt="picture">
+                        
+                        <span class="blog-openBtn" onclick="togglePopup('popup-4')">ป้าสำลี อาหารตามสั่ง</span>
+                        <p>⏰Hours: Opens 8 AM–5 PM, 7–9:30 PM</p>
+                 
+
+                        <div class="popup" id="popup-4">
+                            <div class="blog-popup"></div>
+                            <div class="blog-popup-content">
+                                <span class="blog-closeBtn"  id="closeBtn-4" onclick="togglePopup('popup-4')">&times;</span>
+                                <div class="maps" id="map4"></div>
+                                <div>
+                                    <h3>ป้าสำลี อาหารตามสั่ง</h3>
+                                    <p>ร้านอาหารตามสั่ง เปิดมายาวนานมากว่า20ปี ถูก อร่อย ประหยัด<br>
+                                        📍Address: 141/12 หมู่ที่ 14 ถนนมิตรภาพ ในเมือง เมือง Khon Kaen 40000<br>
+                                        ⏰Hours: Opens 8 AM–5 PM, 7–9:30 PM <br>
+                                        ☎️Phone: 094 857 7915
+                                    </p>
+                                </div>
+                                <button class="addMenuBtnInpopup" onclick="addMenuToWheel('ป้าสำลี อาหารตามสั่ง')">Add Menu</button>
+                            </div>
+                            
+                        </div>
+                        <button class="addMenuBtn" onclick="addMenuToWheel('ป้าสำลี อาหารตามสั่ง')">Add Menu</button>
+                    </div>
+
+
+
+                    <div class="blog-item">
+                        <img src="https://images.deliveryhero.io/image/fd-th/LH/b4eq-hero.jpg"  alt="picture">
+                       
+
+
+                        <span class="blog-openBtn" onclick="togglePopup('popup-5')">ครัวโอม</span>
+                        <p>⏰Hours: 10 AM - 10 PM
+                            
+                            </p>
+
+                        <div class="popup" id="popup-5">
+                            <div class="blog-popup"></div>
+                            <div class="blog-popup-content">
+                                <span class="blog-closeBtn"  id="closeBtn-5" onclick="togglePopup('popup-5')">&times;</span>
+                                <div class="maps" id="map5"></div>
+                                <h3>ครัวโอม</h3>
+                                <p>ร้านอาหารตามสั่ง ถูก อร่อย ประหยัด<br>
+                                    📍Address: Soi Namila, Tambon Sila, Mueang Khon Kaen District, Khon Kaen 40000<br>
+                                    ⏰Hours: 10 AM - 10 PM <br>
+                                    ☎️Phone: 085 463 9146
+                                </p>
+                                <button class="addMenuBtnInpopup" onclick="addMenuToWheel('ครัวโอม')">Add Menu</button>
+                            </div>
+                            
+                        </div>
+                        <button class="addMenuBtn" onclick="addMenuToWheel('ครัวโอม')">Add Menu</button>
+
+        
+
+                    </div>
+
+                    <div class="blog-item">
+                        <img src="https://t1.blockdit.com/photos/2021/03/6045f934dfc4460c194d8408_800x0xcover_vV3zmB3i.jpg" alt="picture">
+
+
+                        <span class="blog-openBtn" onclick="togglePopup('popup-6')">เฉียบโภชนา อาหารตามสั่ง</span>
+                        <p>⏰Hours: Opens 10 AM - 8 PM</p>
+                 
+
+                        <div class="popup" id="popup-6">
+                            <div class="blog-popup"></div>
+                            <div class="blog-popup-content">
+                                <span class="blog-closeBtn"  id="closeBtn-6" onclick="togglePopup('popup-6')">&times;</span>
+                                <div class="maps" id="map6"></div>
+                                <h3>เฉียบโภชนา อาหารตามสั่ง</h3>
+                                <p>📍Address: FRM7+PV3 Unnamed Road Mueang Khon Kaen District, Khon Kaen 40000<br>
+                                    ⏰Hours: Opens 10 AM - 8 PM<br>
+                                    ☎️Phone: 082 751 3653
+
+                                </p>
+                                <button class="addMenuBtnInpopup" onclick="addMenuToWheel('เฉียบโภชนา อาหารตามสั่ง')">Add Menu</button>
+                            </div>
+                            
+                        </div>
+                        <button class="addMenuBtn" onclick="addMenuToWheel('เฉียบโภชนา อาหารตามสั่ง')">Add Menu</button>
+
+        
+
+                    </div>
+
+                    <div class="blog-item">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipMO2nJwRfQ2VvTOe2YHiElw_kURqpi33e48rs2Q=w260-h175-n-k-no" alt="picture">
+                        
+
+
+                        <span class="blog-openBtn" onclick="togglePopup('popup-7')">ร้านน้องฝ้ายอาหารตามสั่ง</span>
+                        <p>⏰Hours: Opens 10 AM - 6 PM</p>
+                 
+
+                        <div class="popup" id="popup-7">
+                            <div class="blog-popup"></div>
+                            <div class="blog-popup-content">
+                                <span class="blog-closeBtn"  id="closeBtn-7" onclick="togglePopup('popup-7')">&times;</span>
+                                <div class="maps" id="map7"></div>
+                                <h3>ร้านน้องฝ้ายอาหารตามสั่ง</h3>
+                                <p>ร้านอาหารตามสั่ง ถูก อร่อย ประหยัด<br>
+                                    📍Address: 772/5 หมู่ 27 บ้านโนนม่วง Sila, เมือง Khon Kaen 40000<br>
+                                    ⏰Hours: Opens 10 AM - 6 PM<br>
+                                    ☎️Phone: 093 326 3753
+                                </p>
+                                <button class="addMenuBtnInpopup" onclick="addMenuToWheel('ร้านน้องฝ้ายอาหารตามสั่ง')">Add Menu</button>
+                            </div>
+                            
+                        </div>
+                        <button class="addMenuBtn" onclick="addMenuToWheel('ร้านน้องฝ้ายอาหารตามสั่ง')">Add Menu</button>
+
+        
+
+                    </div>
+
+                    <div class="blog-item">
+                        <img src="https://images.deliveryhero.io/image/fd-th/LH/l3hy-hero.jpg" alt="picture">
+
+
+                        <span class="blog-openBtn" onclick="togglePopup('popup-8')">ครัวหม้อดิน หลัง มข</span>
+                        <p>⏰Hours: Opens 9 AM - 5 PM.</p>
+                 
+
+                        <div class="popup" id="popup-8">
+                            <div class="blog-popup"></div>
+                            <div class="blog-popup-content">
+                                <span class="blog-closeBtn"  id="closeBtn-8" onclick="togglePopup('popup-8')">&times;</span>
+                                <div class="maps" id="map8"></div>
+                                <h3>ครัวหม้อดิน หลัง มข</h3>
+                                <p>ร้านอาหารตามสั่ง ถูก อร่อย ประหยัด<br>
+                                    📍พิกัด : 567 หมู่ 27 ถนนเส้นหลังมอ ขอนแก่น (ตรงข้ามร้าน บี ทู ซิส หลังมอ)<br>
+                                    ⏰เวลา : 09.00 - 17.00 น.<br>
+                                    ☎️โทร : 089-712-8916</p>
+                                    <button class="addMenuBtnInpopup" onclick="addMenuToWheel('ครัวหม้อดิน หลัง มข')">Add Menu</button>
+                            </div>
+                            
+                        </div>
+                        <button class="addMenuBtn" onclick="addMenuToWheel('ครัวหม้อดิน หลัง มข')">Add Menu</button>
+
+        
+
+                    </div>
+
+
+                    <div class="blog-item">
+                        <img src="https://images.deliveryhero.io/image/fd-th/LH/i0wz-hero.jpg" alt="picture">
+
+
+                        <span class="blog-openBtn" onclick="togglePopup('popup-9')">ครัวหลังบ้านอาหารตามสั่ง</span>
+                        <p>⏰Hours: Opens 9 AM - 8 PM.</p>
+                 
+
+                        <div class="popup" id="popup-9">
+                            <div class="blog-popup"></div>
+                            <div class="blog-popup-content">
+                                <span class="blog-closeBtn"  id="closeBtn-9" onclick="togglePopup('popup-9')">&times;</span>
+                                <div class="maps" id="map9"></div>
+                                <h3>ครัวหลังบ้านอาหารตามสั่ง</h3>
+                                <p>ร้านอาหารตามสั่ง ถูก อร่อย ประหยัด<br>
+                                    📍พิกัด : 42/5 ถนน กัลปพฤกษ์ อำเภอเมืองขอนแก่น ขอนแก่น<br>
+                                    ⏰เวลา : 09.00 - 20.00 น.<br>
+                                    ☎️โทร : 089-092-1156</p>
+                                    <button class="addMenuBtnInpopup" onclick="addMenuToWheel('ครัวหลังบ้านอาหารตามสั่ง')">Add Menu</button>
+                            </div>
+                            
+                        </div>
+                        <button class="addMenuBtn" onclick="addMenuToWheel('ครัวหลังบ้านอาหารตามสั่ง')">Add Menu</button>
+
+        
+
+                    </div>
+
+
+                    <div class="blog-item">
+                        <img src="https://scontent.fkkc2-1.fna.fbcdn.net/v/t39.30808-6/305561890_517291203730145_6537951801055050821_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=CsdDcmWqLc4AX-q-anh&_nc_ht=scontent.fkkc2-1.fna&oh=00_AfD4KqbjdSQ2NFR55dL5E5vMKR6h7rK2sdxec-jDBzdDEg&oe=653BC512" alt="picture">
+
+
+                        <span class="blog-openBtn" onclick="togglePopup('popup-10')">Eat at home</span>
+                        <p>⏰Hours: Opens 11 AM - 9 PM.</p>
+                 
+
+                        <div class="popup" id="popup-10">
+                            <div class="blog-popup"></div>
+                            <div class="blog-popup-content">
+                                <span class="blog-closeBtn" id="popup-10" onclick="togglePopup('popup-10')">&times;</span>
+                                <div class="maps" id="map10"></div>
+                                <h3>Eat at home</h3>
+                                <p>ร้านอาหารตามสั่ง ถูก อร่อย ประหยัด<br>
+                                    📍พิกัด : อดุลยาราม 2 ขอนแก่น (ตรงข้ามหมู่บ้านพิมานหรรษา)<br>
+                                    ⏰เวลา : 11.00 - 21.00 น.<br>
+                                    ☎️โทร : 098-115-7151</p>
+                                    <button class="addMenuBtnInpopup" onclick="addMenuToWheel('Eat at home')">Add Menu</button>
+                            </div>
+                            
+                        </div>
+                        <button class="addMenuBtn" onclick="addMenuToWheel('Eat at home')">Add Menu</button>
+
+        
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+        <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+            ({key: "AIzaSyCqCkP_wuBTce64zYDHzQGonxOYvWsOLDI", v: "weekly"});</script>
+    </body>
+</html>

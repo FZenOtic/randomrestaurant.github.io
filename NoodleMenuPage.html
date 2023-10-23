@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Noodlepage</title>
+        <link  href="style/NMP-style.css" rel="stylesheet">
+        <link  href="style/stylenavbar.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5fcc11d7db.js" crossorigin="anonymous"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <link rel="stylesheet" type="text/css" href="style/styleMap.css" />
+        <script type="module" src="script/scriptMap2.js"></script>
+
+    </head>
+    <body>  
+
+        <div class="navigation">
+            <button class="hamburger" onclick="show()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </button>
+    
+            <nav id="nav">
+                <ul>
+                    <li><a href="HomePage.html" >Home</a></li>
+                    <li id="typeOfFood"><a>Type of Food</a>
+                        <ul class="dropdown-content">
+                            <li><a href="aLaCarteFoodPage.html" >A La Carte Food</a></li>
+                            <li><a href="NoodleMenuPage.html" >Noodles</a></li>
+                        </ul>
+                </ul>
+            </nav>
+        </div>
+        <script src="script/scriptnavbar.js"></script>
+        
+        
+
+        <h1>Noodle Menu</h1>
+        <div class="blog-indecrease">
+            <p>You Can Random Restaurant!!</p>
+            <div>
+                <button id="decreaseBtn"><i class="fa-solid fa-minus"></i></button>
+                <span id="counter">0</span>
+                <button id="increaseBtn"><i class="fa-solid fa-plus"></i></button>
+                <button id="addBtn">Add</button>
+                <script src="script/NMP-script.js"></script>
+            </div>
+        </div>
+        
+
+
+        <section class="blog">
+
+            <div class="container">
+
+                <div class="blog-title"></div>
+
+                <div class="blog-con">
+
+                    <div class="blog-item">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipO90vIN3rugeiw0aBy_rBlgBNOGJHekzjrBRmTi=s1360-w1360-h1020"alt="picture">
+
+                        <span class="blog-openBtn" onclick="togglePopup('popup-1')">มีเส้น ก๋วยเตี๋ยวเรือ รสเจ็บใจเสาะ </span>
+                        <p class="times">⏰Hours:  9:30 AM–9:30 PM</br>
+
+                        </p>
+
+                        <div class="popup" id="popup-1">
+                            <div class="blog-popup"></div>
+                            <div class="blog-popup-content">
+                                <span class="blog-closeBtn"  id="closeBtn-1" onclick="togglePopup('popup-1')">&times;</span>
+                                <div class="maps" id="map11"></div>
+                                
+                                    <h3 >มีเส้น ก๋วยเตี๋ยวเรือ รสเจ็บ ใจเสาะ (สาขาหลังมอ)</h3>
+                                    <p>📍Address: ศิลา 123 Mueang Khon Kaen District, Khon Kaen 40002<br>
+                                        ⏰Hours:  9:30 AM–9:30 PM<br>
+                                        ☎️Phone: 084 619 1171
+                                        
+                                    </p>
+                                
+                                <button class="addMenuBtnInpopup" onclick="addMenuToWheel('มีเส้น ก๋วยเตี๋ยวเรือ รสเจ็บใจเสาะ')">Add Menu</button>
+                            </div>
+                            
+                        </div>
+                        <button class="addMenuBtn" onclick="addMenuToWheel('มีเส้น ก๋วยเตี๋ยวเรือ รสเจ็บใจเสาะ')">Add Menu</button>
+                    </div>
+
+
+
+                    <div class="blog-item">
+                        <img src="https://10619-2.s.cdn12.com/rests/small/w320/h220/105_507869000.jpg"alt="picture">
+                        
+                        <span class="blog-openBtn" onclick="togglePopup('popup-2')">บะหมี่ปฏิพล เมนูก๋วยจั๊บน้ำใส</span>
+                        <p class="times">⏰Hours: Monday - Saturday 6 AM–1 PM ,Sunday Closed
+                            
+                            </br>
+                            
+                        </p>
+
+                        <div class="popup" id="popup-2">
+                            <div class="blog-popup"></div>
+                            <div class="blog-popup-content">
+                                <span class="blog-closeBtn"  id="closeBtn-2" onclick="togglePopup('popup-2')">&times;</span>
+                                <div class="maps" id="map12"></div>
+                                
+                                    <h3 >บะหมี่ปฏิพล เมนูก๋วยจั๊บน้ำใส</h3>
+                                    <p>📍Address:152 Adunlayaram 2, Tambon Nai Mueang, Mueang Khon Kaen District, Khon Kaen 40000<br>
+                                        ⏰Hours:Monday - Saturday 6 AM–1 PM, Sunday Closed<br>
+                                        ☎️Phone:080 564 6411
+                                        
+                                    </p>
+                                
+                                <button class="addMenuBtnInpopup" onclick="addMenuToWheel('บะหมี่ปฏิพล เมนูก๋วยจั๊บน้ำใส')">Add Menu</button>
+                            </div>
+                            
+                        </div>
+                        <button class="addMenuBtn" onclick="addMenuToWheel('บะหมี่ปฏิพล เมนูก๋วยจั๊บน้ำใส<')">Add Menu</button>
+                    </div>
+
+
+
+                    <div class="blog-item">
+                        <img src="https://img.wongnai.com/p/1920x0/2018/07/06/12882a8eaeb44fa8a6076d4efe66e097.jpg"alt="picture">
+                        
+                        <span class="blog-openBtn" onclick="togglePopup('popup-3')">ร้านโก้ตี้กี่หมวย</span>
+                        <p class="times">⏰Hours: Open 8 AM–2 PM, Friday	Closed</br>
+                            
+                        </p>
+
+                        <div class="popup" id="popup-3">
+                            <div class="blog-popup"></div>
+                            <div class="blog-popup-content">
+                                <span class="blog-closeBtn"  id="closeBtn-3" onclick="togglePopup('popup-3')">&times;</span>
+                                <div class="maps" id="map13"></div>
+                                
+                                    <h3 >ร้านโก้ตี้กี่หมวย</h3>
+                                    <p>📍Address:124/88 ในเมือง Mueang Khon Kaen District, Khon Kaen 40000<br>
+                                        ⏰Hours: Open 8 AM–2 PM, Friday Closed
+                                        
+                                    </p>
+                                
+                                <button class="addMenuBtnInpopup" onclick="addMenuToWheel('ร้านโก้ตี้กี่หมวย')">Add Menu</button>
+                            </div>
+                            
+                        </div>
+                        <button class="addMenuBtn" onclick="addMenuToWheel('ร้านโก้ตี้กี่หมวย')">Add Menu</button>
+                    </div>
+
+
+
+                    <div class="blog-item">
+                        <img src="https://img.wongnai.com/p/1920x0/2021/12/28/f0a14d003b5d4b9d974b3ced2056a196.jpg"alt="picture">
+                        
+                        <span class="blog-openBtn" onclick="togglePopup('popup-4')">ร้านก๋วยเตี๋ยวหมูตุ๋น เนื้อตุ๋น @คิงคอง</span>
+                        <p class="times">⏰Hours: Open 9 AM–8 PM </br>
+                            
+                        </p>
+
+                        <div class="popup" id="popup-4">
+                            <div class="blog-popup"></div>
+                            <div class="blog-popup-content">
+                                <span class="blog-closeBtn"  id="closeBtn-4" onclick="togglePopup('popup-4')">&times;</span>
+                                <div class="maps" id="map14"></div>
+                                
+                                    <h3 >ร้านก๋วยเตี๋ยวหมูตุ๋น เนื้อตุ๋น @คิงคอง</h3>
+                                    <p>📍Address:129 หมู่14 Adunyaram Rd, ในเมือง เมือง Khon Kaen 40000<br>
+                                        ⏰Hours:Open 9 AM–8 PM<br>
+                                        ☎️Phone: 091 867 4052
+                                        
+                                    </p>
+                                
+                                <button class="addMenuBtnInpopup" onclick="addMenuToWheel('ร้านก๋วยเตี๋ยวหมูตุ๋น เนื้อตุ๋น @คิงคอง')">Add Menu</button>
+                            </div>
+                            
+                        </div>
+                        <button class="addMenuBtn" onclick="addMenuToWheel('ร้านก๋วยเตี๋ยวหมูตุ๋น เนื้อตุ๋น @คิงคอง')">Add Menu</button>
+                    </div>
+
+
+                    <div class="blog-item">
+                        <img src="https://img.wongnai.com/p/400x0/2019/09/02/ff619e1c3bb34ae3a99855f752165bf0.jpg"alt="picture">
+                        
+                        <span class="blog-openBtn" onclick="togglePopup('popup-5')">ร้านก้วยเตี๋ยวยายเตี้ย</span>
+                        <p class="times">⏰Hours:Open 8 AM–4 PM, Sunday Closed</br>
+                            
+                        </p>
+
+                        <div class="popup" id="popup-5">
+                            <div class="blog-popup"></div>
+                            <div class="blog-popup-content">
+                                <span class="blog-closeBtn"  id="closeBtn-5" onclick="togglePopup('popup-5')">&times;</span>
+                                <div class="maps" id="map15"></div>
+                                
+                                    <h3 >ร้านก้วยเตี๋ยวยายเตี้ย </h3>
+                                    <p>📍Address:16/21 หมู่ 14 ซ. มิตรภาพ 24 Mittraphap 8/5 Alley, Mueang Khon Kaen District, Khon Kaen 40000<br>
+                                        ⏰Hours:Open 8 AM–4 PM, Sunday Closed<br>
+                                        ☎️Phone: 087 636 3632
+                                        
+                                    </p>
+                                
+                                <button class="addMenuBtnInpopup" onclick="addMenuToWheel('ร้านก้วยเตี๋ยวยายเตี้ย')">Add Menu</button>
+                            </div>
+                            
+                        </div>
+                        <button class="addMenuBtn" onclick="addMenuToWheel('ร้านก้วยเตี๋ยวยายเตี้ย')">Add Menu</button>
+                    </div>
+
+
+
+                    <div class="blog-item">
+                        <img src="https://img.wongnai.com/p/256x256/2021/01/15/d8dc7307cbfd444d94d18d756c7b77ce.jpg"alt="picture">
+                        
+                        <span class="blog-openBtn" onclick="togglePopup('popup-6')">ร้าน 1110 ก๋วยเตี๋ยวต้มยำซี่โครงอ่อน</span>
+                        <p class="times">⏰Hours: Open 9 AM–4 PM</br>
+                            
+                        </p>
+
+                        <div class="popup" id="popup-6">
+                            <div class="blog-popup"></div>
+                            <div class="blog-popup-content">
+                                <span class="blog-closeBtn"  id="closeBtn-6" onclick="togglePopup('popup-6')">&times;</span>
+                                <div class="maps" id="map16"></div>
+                                
+                                    <h3 >ร้าน 1110 ก๋วยเตี๋ยวต้มยำซี่โครงอ่อน</h3>
+                                    <p>📍Address:ศูนย์อาหารและบริการ มหาวิทยาลัย 123 หมู่ 16 Mueang Khon Kaen District, Khon Kaen 40000<br>
+                                        ⏰Hours: Open 9 AM–4 PM<br>
+                                        ☎️Phone: 098 323 2005
+                                        
+                                    </p>
+                                
+                                <button class="addMenuBtnInpopup" onclick="addMenuToWheel('ร้าน 1110 ก๋วยเตี๋ยวต้มยำซี่โครงอ่อน')">Add Menu</button>
+                            </div>
+                            
+                        </div>
+                        <button class="addMenuBtn" onclick="addMenuToWheel('ร้าน 1110 ก๋วยเตี๋ยวต้มยำซี่โครงอ่อน')">Add Menu</button>
+                    </div>
+
+
+                    <div class="blog-item">
+                        <img src="https://scontent.fbkk13-3.fna.fbcdn.net/v/t39.30808-6/290320263_1993237644213371_1393312377695244002_n.jpg?stp=dst-jpg_p960x960&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFoL2CfXvgy_2VGcSQv9dScOL7LOPlM71E4vss4-UzvUVZgW1oXuC82ZtIlMCAiRJvaQobkpLA5JHu1o4xyIe-B&_nc_ohc=Ys6vMNdyRqsAX-p8fsb&_nc_ht=scontent.fbkk13-3.fna&oh=00_AfAbKXAa_P_W9wQ7-geAiMuEoHtzJtEcD3vNPMv9MK-yUw&oe=653B6F2B"alt="picture">
+                        
+                        <span class="blog-openBtn" onclick="togglePopup('popup-7')">ร้านก๋วยเตี๋ยวดู๋ดี๋พี่แป้ง</span>
+                        <p class="times">⏰Hours: 10:56 AM–6 PM </br>
+                            
+                        </p>
+
+                        <div class="popup" id="popup-7">
+                            <div class="blog-popup"></div>
+                            <div class="blog-popup-content">
+                                <span class="blog-closeBtn"  id="closeBtn-7" onclick="togglePopup('popup-7')">&times;</span>
+                                <div class="maps" id="map17"></div>
+                                
+                                    <h3 >ร้านก๋วยเตี๋ยวดู๋ดี๋พี่แป้ง</h3>
+                                    <p>📍Address: 233/A14-19 ม.12 ตลาดเจ้พร2 ถ.มิตรภาพ ศิลา เมือง Khon Kaen 40000<br>
+                                        ⏰Hours: 10:56 AM–6 PM<br>
+                                        ☎️Phone: 087 490 1119
+                                        
+                                    </p>
+                                
+                                <button class="addMenuBtnInpopup" onclick="addMenuToWheel('ร้านก๋วยเตี๋ยวดู๋ดี๋พี่แป้ง')">Add Menu</button>
+                            </div>
+                            
+                        </div>
+                        <button class="addMenuBtn" onclick="addMenuToWheel('ร้านก๋วยเตี๋ยวดู๋ดี๋พี่แป้ง')">Add Menu</button>
+                    </div>
+
+
+
+                    <div class="blog-item">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipM5LRh36Q67sh6SOaXdmkLXyrzX48xkLZbeu760=s1360-w1360-h1020"alt="picture">
+                        
+                        <span class="blog-openBtn" onclick="togglePopup('popup-8')">ก๋วยเตี๋ยวเรือพ่นไฟ ตลาดอาม่ามอลล์</span>
+                        <p class="times">⏰Hours: 6 AM–12 AM </br>
+                            
+                        </p>
+
+                        <div class="popup" id="popup-8">
+                            <div class="blog-popup"></div>
+                            <div class="blog-popup-content">
+                                <span class="blog-closeBtn"  id="closeBtn-8" onclick="togglePopup('popup-8')">&times;</span>
+                                <div class="maps" id="map18"></div>
+                                
+                                    <h3 >ก๋วยเตี๋ยวเรือพ่นไฟ ตลาดอาม่ามอลล์</h3>
+                                    <p>📍Address: ตลาดอาม่ามอลล์ Tambon Sila, Amphoe Mueang Khon Kaen, Khon Kaen 40000<br>
+                                        ⏰Hours: 6 AM–12 AM<br>
+                                        ☎️Phone: 085 990 8599
+                                        
+                                    </p>
+                                
+                                <button class="addMenuBtnInpopup" onclick="addMenuToWheel('ก๋วยเตี๋ยวเรือพ่นไฟ ตลาดอาม่ามอลล์')">Add Menu</button>
+                            </div>
+                            
+                        </div>
+                        <button class="addMenuBtn" onclick="addMenuToWheel('ก๋วยเตี๋ยวเรือพ่นไฟ ตลาดอาม่ามอลล์')">Add Menu</button>
+                    </div>
+
+
+
+                    <div class="blog-item">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipM1ktMcs_3qp1GmrfqK30oNrfuxtPtWZOhfOGQb=s1360-w1360-h1020"alt="picture">
+                        
+                        <span class="blog-openBtn" onclick="togglePopup('popup-9')">ก๋วยเตี๋ยวเรือตะแคงหม้อซดหลัง ม.ขอนแก่น</span>
+                        <p class="times">⏰Hours: Opens 10 AM–10 PM, Sunday Closed </br>
+                            
+                        </p>
+
+                        <div class="popup" id="popup-9">
+                            <div class="blog-popup"></div>
+                            <div class="blog-popup-content">
+                                <span class="blog-closeBtn"  id="closeBtn-9" onclick="togglePopup('popup-9')">&times;</span>
+                                <div class="maps" id="map19"></div>
+                                
+                                    <h3 >ก๋วยเตี๋ยวเรือตะแคงหม้อซดหลัง ม.ขอนแก่น</h3>
+                                    <p>📍Address: 420/9 เมือง Khon Kaen 40000<br>
+                                        ⏰Hours: Opens 10 AM–10 PM, Sunday Closed<br>
+                                        ☎️Phone: 086 347 2874
+                                        
+                                    </p>
+                                
+                                <button class="addMenuBtnInpopup" onclick="addMenuToWheel('ก๋วยเตี๋ยวเรือตะแคงหม้อซดหลัง ม.ขอนแก่น')">Add Menu</button>
+                            </div>
+                            
+                        </div>
+                        <button class="addMenuBtn" onclick="addMenuToWheel('ก๋วยเตี๋ยวเรือตะแคงหม้อซดหลัง ม.ขอนแก่น')">Add Menu</button>
+                    </div>
+
+
+
+                    <div class="blog-item">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipPLSl6oXfU5Rd7giIa24FuA1nPZoI6jwLyNvD9u=s1360-w1360-h1020 "alt="picture">
+                      
+                        
+                        <span class="blog-openBtn" onclick="togglePopup('popup-10')">ร้านก๋วยเตี๋ยวสูตรแม่บุญธรรม</span>
+                        <p class="times">⏰Hours: Opens 9:30 AM–5 PM </br>
+                            
+                        </p>
+
+                        <div class="popup" id="popup-10">
+                            <div class="blog-popup"></div>
+                            <div class="blog-popup-content">
+                                <span class="blog-closeBtn"  id="closeBtn-10" onclick="togglePopup('popup-10')">&times;</span>
+                                <div class="maps" id="map20"></div>
+                                
+                                    <h3 >ร้านก๋วยเตี๋ยวสูตรแม่บุญธรรม</h3>
+                                    <p>📍Address: Faculty of Fine and Applied Arts Khon Kaen University<br>
+                                        ⏰Hours: Opens 9:30 AM–5 PM<br>
+                                        ☎️Phone: 061 932 2828
+                                        
+                                    </p>
+                                
+                                <button class="addMenuBtnInpopup" onclick="addMenuToWheel('ร้านก๋วยเตี๋ยวสูตรแม่บุญธรรม')">Add Menu</button>
+                            </div>
+                            
+                        </div>
+                        <button class="addMenuBtn" onclick="addMenuToWheel('ร้านก๋วยเตี๋ยวสูตรแม่บุญธรรม')">Add Menu</button>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+
+        </section>
+        <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+            ({key: "AIzaSyCqCkP_wuBTce64zYDHzQGonxOYvWsOLDI", v: "weekly"});</script>
+    </body>
+</html>

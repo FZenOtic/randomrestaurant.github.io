@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    margin: auto;
+    background-color: rgb(255, 192, 203, 0.9);
+}
+
+/* css of Increase and decrease button */
+.blog-indecrease button{
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    background: white;
+    color: black;
+    font-size: bold;
+    border-radius: 10px;
+}
+
+.blog-indecrease{
+    background-color: rgb(255, 192, 203, 0.9);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;    
+}
+
+
+.blog-indecrease P {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;   
+}
+
+
+body{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/001/959/920/large_2x/blurred-busy-restaurant-background-free-photo.JPG?fbclid=IwAR14pL8mQ8jMCfAppWEpufvCQGlTfta5rUd3Zyc2idPuZuVDFOviP-fG73Y");
+    background-size: cover;
+
+}
+
+
+.blog-con{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+}
+
+
+.blog-title{  /* blog our Blog */
+    margin: 2rem 0;
+}
+
+.blog-item{
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: rgba(112, 112, 112, 0.7);
+    color: #fff;
+    border-radius: 10px;
+}
+
+
+.blog-item img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 300px;
+    width: 300px;
+}
+
+.blog-item a{
+    font-size:  20px;
+    display: inline-block;
+    color: #fff;
+    padding: 0.5rem 1rem;
+}
+
+.blog-item p {
+    margin: 1rem 0;
+}
+
+.blog-item .blog-openBtn{
+    cursor: pointer;
+    font-size:  20px;
+    display: inline-block;
+    color: #fff;
+    padding: 0.5rem 1rem;
+}
+
+
+.blog-item .addMenuBtn{
+    position: flex;
+    display: flex;
+    margin-top: 80px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background: rgb(224,92,90);
+    color: rgb(255, 255, 255);
+    font-size: bold;
+    border-radius: 10px;
+
+}
+
+.popup .blog-popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0,0,0,0.6);
+    z-index: 1;
+    display: none;
+}
+
+.popup .blog-popup-content{
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 40%;
+    height: 90%;
+    z-index: 2;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.popup .blog-popup-content h3{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 0;
+    
+}
+
+
+.popup .blog-closeBtn{
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    background: #222;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.popup.active .blog-popup{
+    display: block;
+}
+
+.popup.active .blog-popup-content{
+    transform: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.popup .blog-popup-content .addMenuBtnInpopup{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    background: pink;
+    color: black;
+    font-size: bold;
+    border-radius: 10px;
+}
+
+.navigation a {
+    text-decoration: none;
+}

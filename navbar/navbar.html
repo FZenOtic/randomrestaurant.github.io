@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Slide-Out Navigation</title>
+</head>
+
+<body>
+    <div class="navigation">
+        <button class="hamburger" onclick="show()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </button>
+
+        <nav id="nav">
+            <ul>
+                <li><a>Home</a></li>
+                <li id="typeOfFood"><a>Type of food</a>
+                    <ul class="dropdown-content">
+                        <li><span>Fast food</span></li>
+                        <li><a>Noodles</a></li>
+                        <li><a>Desserts & Cafe</a></li>
+                    </ul>
+                <li id="restaurantNearMe"><a>Restaurant near me</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
